@@ -1,0 +1,10 @@
+apple = 10 #사과 10개
+banana = 20 #바나나 20개
+lemon =50 # 레몬 50개
+fruit = apple + banana + lemon #과일 갯수 구하기
+print(apple) #사과 갯수 출력
+print(banana)#바나나 갯수 출력
+print(fruit)#과일 갯수 출력
+
+apple = 30 사과 갯수 변경
+print(apple)변경된 사과갯수 출력
