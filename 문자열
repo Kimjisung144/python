@@ -1,0 +1,8 @@
+print('안녕하세요')
+print("i love the earth")
+print("내가 좋아하는 숫자는 1,4,6입니다.")
+
+city = 'seoul'
+dosi = "미래 도시"
+print(dosi)
+print(city)
