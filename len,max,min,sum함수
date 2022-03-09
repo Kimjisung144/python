@@ -5,3 +5,7 @@ print(length) #길이값 출력
 
 max_number = max(11,22,33,44,55,66) # max는 튜플안에 있는 숫자중 가장큰 값을 정해주는 함수
 print(max_number) #가장큰값 출력
+min_number = min(11,22,33,44,55,66)
+print(min_number) #가장작은값 출력
+sum_number = sum(11,22,33,44,55,66)
+print(sum_number) #합친값 출력
