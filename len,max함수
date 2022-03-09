@@ -1,0 +1,7 @@
+print("안녕! 나도함수야")
+
+length = len("이문자열은 얼마나 길어질까요"); #len은 문자길이를 구하는함수
+print(length) #길이값 출력
+
+max_number = max(11,22,33,44,55,66) # max는 튜플안에 있는 숫자중 가장큰 값을 정해주는 함수
+print(max_number) #가장큰값 출력
