@@ -1,0 +1,30 @@
+print("*" * 50)
+str1 = '내이름은'
+str2 = '김지성 입니다.'
+print(str1+str2+"학번은 60222460입니다.") ## 문자열에서 +는 문장 연결하기
+
+print(str1[0]) ##인덱스의 0은 첫번쨰 문자를 뜻함 c언어처럼 0부터 시작함
+print(str1[1])
+print(str1[2])
+print(str1[3])
+
+print(str2[-8]) ##인덱스의 [-1]은 문자열  맨뒤를 뜻함 뒤에서부터 앞으로 숫자가 작아짐
+print(str2[-7])
+print(str2[-6])
+print(str2[-5])
+print(str1[-4])
+print(str1[-3])
+print(str1[-2])
+print(str1[-1])
+
+string ='NATURE'
+print("-" *5 +"정방향" + "-" *5)
+print(string[0:5]) ## 슬라이싱은 [첫:끝]으로 끝의 문자는 포함안됨 그앞에 인덱스까지 포함
+print(string[2:4])
+print(string[2:])
+print(string[:3])
+
+print("-" *5 +"역방향" + "-" *5)
+print(string[-4:-2]) ##역방향이라도 -2가 먼저는 아니다.
+print(string[-6:])
+print(string[:-3])
