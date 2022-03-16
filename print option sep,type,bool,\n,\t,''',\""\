@@ -1,0 +1,14 @@
+age = 38
+pi = 3.141592
+print(10, 3*5, "hello\n" ,sep='--')
+print(type(age),"\n")
+print('변수 pi의 자료형은 ',type(pi))
+boot = True
+print(boot)
+print(type(boot),"\n")
+text = '나는\"문자열"\n줄이 바뀜\t탭이 추가됨'
+print(text)
+multitext = '''이것은 여러줄문자열을 표현한다.
+                편리하게 문자열 쓸떄 좋다
+                '''
+print(multitext)
