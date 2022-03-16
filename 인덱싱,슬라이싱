@@ -21,7 +21,7 @@ print(str1[:4])
 print()
 
 
-print(str1[-2:-4]) #역방향이라도 -2가 먼저는 아니다.
+print(str1[-3:-1]) #역방향이라도 -2가 먼저는 아니다.
 print(str1[:-1])
 print()
 
