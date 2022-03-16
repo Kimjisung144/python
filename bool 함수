@@ -1,0 +1,17 @@
+boot = True
+print(boot)
+print(type(boot),"\n")
+
+boof = False
+print(boof)
+print(type(boof),"\n")
+
+print(20>13) ##참거짓구별
+print(0<0)
+print('안녕' == '안녕')
+
+birds = 3
+print(bool(birds)) ##프로그래밍에서 0이 아닌 숫자는 다 참이다.
+
+birds = 0
+print(bool(birds))
