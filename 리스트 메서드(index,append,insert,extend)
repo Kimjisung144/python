@@ -13,3 +13,31 @@ print(colors)
 colors.extend(['black','white']) ##리스트에 값추가
       
 print(colors)
+
+print('red의 위치:', colors.index('red') ##리스트중 괄호안에 있는 값이 어디있는지 찾는메서드
+print('orange의 위치:', colors.index('orange'))
+print()
+colors.append('purple') ## 리스트에 추가하기
+print(colors)
+
+colors.insert(3, 'green') ##colors리스트 3번에 갑을 green으로 바꾸기
+print(colors)
+
+colors.extend(['black','white']) ##리스트에 값추가
+      
+print(colors)
+
+colors.sort() ##sort는 알파벳순으로 정령함
+print(colors)
+
+colors.reverse ## 거꾸로 정렬
+print(colors)
+print()
+
+print(colors.pop()) ##리스트 맨마지막항목을 가져오기 추출된 항목은 리스트에서 삭제된다.
+print(colors)
+
+colors.remove('red') ## 괄호안에 있는 단어 삭제하기
+print(colors)
+
+print(colors.count('yellow') ## 괄호안에 있는 단어 갯수세기
