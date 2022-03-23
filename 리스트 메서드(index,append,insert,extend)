@@ -41,3 +41,17 @@ colors.remove('red') ## 괄호안에 있는 단어 삭제하기
 print(colors)
 
 print(colors.count('yellow') ## 괄호안에 있는 단어 갯수세기
+
+floating = [12.837,4.89,4037.0,11.19]
+
+print(len(floating)) ## 리스트 길이재기
+print(max(floating)) ## 리슽값중 최댓값
+print(min(floating)) ##최솟값
+print(sum(floating)) ## 합
+print()
+
+print(sorted(floating)) #출력할떄 정렬하기 하지만 리스트자체는 정렬되지 않음
+print(floating)
+
+string = 'python'
+print(list(string)) ##단어 자체를 리스트화 시
