@@ -1,0 +1,15 @@
+colors = ['red','orange','yellow']
+print(colors)
+
+print('red의 위치:', colors.index('red') ##리스트중 괄호안에 있는 값이 어디있는지 찾는메서드
+print('orange의 위치:', colors.index('orange'))
+print()
+colors.append('purple') ## 리스트에 추가하기
+print(colors)
+
+colors.insert(3, 'green') ##colors리스트 3번에 갑을 green으로 바꾸기
+print(colors)
+
+colors.extend(['black','white']) ##리스트에 값추가
+      
+print(colors)
