@@ -1,0 +1,18 @@
+mystr = 'hello, my little baby'
+print(mystr.upper()) ## 소문자를 대문자로 변환
+print(mystr.lower()) ## 대문자를 소문자로
+print(mystr.title()) ## 단어 앞글자 대문자로
+print()
+
+print(mystr.count('b')) ## 괄호안에 문자 갯수 카운트
+print(mystr.endswith('y')) ## 문장마지막에 글자 괄호와 맞는지 참,거짓
+print(mystr.startswith('h')) ## 문장첫글자 괄호와 맞는지 참,거짓
+print(mystr.lower().startswith('h')) ## 매서드에 매서드를 쓰면 왼쪽부터 순서대로 진행된다.
+print()
+
+mystrlist1 = mystr.split() ##split는 괄호안 문자기준으로 문자열을 분리하고 리스트로 만들어 반환한다 괄호를 비워드면 공백이 기본값이다. 
+print(mystrlist1)
+mystrlist2 = mystr.split(',') ## ,기준으로 리스트에 나누어서 넣음 
+print(mystrlist2)
+mystrfill = mystr.zfill(30) ##글자 30개 맞추기 남는 자리는 0으로 채워짐
+print(mystrfill)
