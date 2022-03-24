@@ -1,5 +1,13 @@
+a=2
+b =0
 la = int(input("소수(prime number)인지를 판별하는 2이상의 정수 입력-->"))
-if la % 2== 0:
-    print("소수아닙니다.")
-else :
-    print("소수입니다.")
+
+while la%a==0:
+    if la % a == 0:
+        b=1
+        break
+        a = a+1
+if(b ==1):
+    print("정수",la,"은 소수아닙니다.")
+else:
+    print("정수",la,"는 소수입니다.")
