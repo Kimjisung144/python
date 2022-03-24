@@ -1,0 +1,25 @@
+text1 = input("월 입력:")
+if text1 == '1':
+    print(text1+"월 겨울")
+if text1 == '2':
+    print(text1+"월 겨울")
+if text1 == '3':
+    print(text1+"월 겨울")
+if text1 == '4':
+    print(text1+"월 봄")
+if text1 == '5':
+    print(text1+"월 봄")
+if text1 == '6':
+    print(text1+"월 여름")
+if text1 == '7':
+    print(text1+"월 여름")
+if text1 == '8':
+    print(text1+"월 여름")
+if text1 == '9':
+    print(text1+"월 가을")
+if text1 == '10':
+    print(text1+"월 가을")
+if text1 == '11':
+    print(text1+"월 겨울")
+if text1 == '12':
+    print(text1+"월 겨울")
