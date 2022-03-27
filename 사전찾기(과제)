@@ -1,0 +1,6 @@
+korean = ['정렬','초보자','내포','사전']
+english = ['sorting','novice','comprehension','dictionary']
+
+a = input("찾을단어 입력?")
+b =korean.index(a)
+print(english[b])
