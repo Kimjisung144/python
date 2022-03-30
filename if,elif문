@@ -1,0 +1,17 @@
+import turtle
+t= turtle.pen()
+t.shape('turtle')
+
+reptilla = ['turtle','crocodile','lguana'] ##reptilla리스트안에 turtle,crocodile,lguana를 넣음
+am = ['frog','toad','axolot']## am 리스트에 frog,toad, axlot넣음
+
+if 'turtle' in reptilla: ##만약 reptilla 안에 turtle이 있으면 참 이니면 거짓
+    t.color('gray') ##펜 색깔 회색으로
+    t.forward(100)
+elif 'turtle' not in am: ##elif는 c언어의 else if랑 같은 함수다
+    t.color('red')
+    t.forward(50)
+
+t.reset()
+
+draw = False
