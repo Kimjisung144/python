@@ -1,4 +1,4 @@
-a=2
+a=3
 b =0
 la = int(input("소수(prime number)인지를 판별하는 2이상의 정수 입력-->"))
 
