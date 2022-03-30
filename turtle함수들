@@ -2,19 +2,21 @@ import turtle
 t= turtle.pen()
 t.shape('turtle')
 
-reptilla = ['turtle','crocodile','lguana']
-am = ['frog','toad','axolot']
+reptilla = ['turtle','crocodile','lguana']##reptilla리스트안에 turtle,crocodile,lguana를 넣음
+am = ['frog','toad','axolot'] ## am 리스트에 frog,toad, axlot넣음
 
-if 'turtle' in reptilla:
-    t.color('gray')
-    t.forward(100)
-    t.left(90)
+if 'turtle' in reptilla: ##만약 reptilla 안에 turtle이 있으면 참 이니면 거짓
+    t.color('gray')##펜 색깔 회색으로
+    t.fillcolor('red')#안쪽 펜 색깔
+    t.pencolor('blue') ##펜 외각선부분색깔과 칠해지는 색깔
+    t.forward(100) ## 펜 앞으로
+    t.left(90) ##왼쪽으로 90회전
     
 
-if 'turtle' not in am:
+if 'turtle' not in am:  ##만약 am리스트안에 turtle이 없으면 참 이고 없으면 거짓
     t.color('red')
     t.forward(50)
-    t.right(90)
+    t.right(90) ##펜 오른쪽으로 90도 회전
 t.reset()
 
-draw = False
+draw = False ##
