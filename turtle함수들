@@ -1,0 +1,20 @@
+import turtle
+t= turtle.pen()
+t.shape('turtle')
+
+reptilla = ['turtle','crocodile','lguana']
+am = ['frog','toad','axolot']
+
+if 'turtle' in reptilla:
+    t.color('gray')
+    t.forward(100)
+    t.left(90)
+    
+
+if 'turtle' not in am:
+    t.color('red')
+    t.forward(50)
+    t.right(90)
+t.reset()
+
+draw = False
