@@ -1,0 +1,2 @@
+rin = len(something_list) ##len은 길이를 구하는 함수
+        for i in range(rin): 
