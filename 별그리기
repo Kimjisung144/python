@@ -1,0 +1,6 @@
+import turtle
+t = turtle.Pen()
+t.shape("turtle")
+for i in range(20): 
+    t.forward(i*10)
+    t.right(144)
