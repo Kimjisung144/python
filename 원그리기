@@ -1,0 +1,14 @@
+import turtle
+t = turtle.pen()
+t.shape("turtle")
+t.up()
+
+colors = ['red','green','blue','yellow','purple']
+for c in colors:
+    t.color(c)
+    for i in range(12):
+        t.forward(100)
+        t.dot()
+        t.backwrad(100)
+        t.right(30)
+    t.right(6)
