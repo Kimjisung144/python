@@ -1,0 +1,7 @@
+import math
+print(math.pi) #math모듈의 pi함수 사용 pi = 3.141592.....
+a = int(input("루트 안에 숫자를 입력해주세요"))
+print(math.sqrt(a)) #math모듈의 sqrt(루트)함수사용  sqrt = a**1/2
+b = int(input("반지름의 길이를 입력해주세요:"))
+c = b*math.pi*2 #반지름 19인 원의 둘레를 구하는식 공식= 2*파이*반지름
+print("반지름이 10인 원의 둘레는 ",c,"이다.")
