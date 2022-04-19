@@ -1,0 +1,32 @@
+andsd='''
+    s     s   s
+  s     s    s
+   s     s    s
+  s     s    s
+  **************        **
+  **          **      ****
+   ** coffee **    *****
+    **      **  ****
+      ******
+ '''
+print_list1 = [['아메리카노',1800],['까페라떼',2700],['핫초코',2300]]
+print(andsd)
+print("\n"+"코드덤 커피 자판기")
+print("\t"+"-메뉴-")
+ 
+print("1:아메리카노 1,800원")
+print("2:까페라떼   2,700원")
+print("3:핫초코     2,300원")
+print("*"*50)
+a=input("커피종류를 입력하시요")
+
+for i in range(3):
+    if print_list1[i][0] == a:
+        b = print_list1[i][1]
+        break
+    
+count1=int(input("몇잔 드릴까요?"))
+cost = count1 * b
+pay = int(input("총금액은"+str(cost)+"입니다."+"돈을 투입해주세요"))
+change1 = pay-cost
+print(pay,"원을 받았습니다."+"거스름돈은",change1,"원입니다.")
