@@ -17,3 +17,11 @@ print(3 in tuple)
 
 print(tuple.count(1)) #1이라는 숫자가 몇개 있는지 갯수 세주기
 print(tuple.index(2)) #값 위치 찾기 근데 첫번째로 찾개되는 즉 항목중에 맨 앞에 있는 건만 확인함
+
+tuple3=(1,2,3,4,5)
+print(len(tuple3)) #튜플 길이 
+print(max(tuple3)) #튜플안에 항목중 제일 큰 값
+print(min(tuple3)) #튜플안에 항목중 제일 작은 값
+print(sum(tuple3)) #항목 다 더하기
+print(sorted(tuple3)) #반환하면 튜플이 아닌 리스트로 나온다.
+print(tuple(tuple2)) #리스트를 튜플화 시키기
