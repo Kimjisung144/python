@@ -1,22 +1,23 @@
-tuple = (1,2,[10,20,30])
+tuple0 = (1,2,[10,20,30])
 tuple1 = (1,2,[10,20,30])
 tuple2 = [1,2,[10,20,30]]
-tuple[2][1] = 0  #튜플은 불변하지만 튜플안에 가변객체가 있으면 객체안에 항목은 수정가능
-print(tuple) 
-print(tuple+ tuple1) #튜플끼리 합쳐지는 가능
-print(tuple+ tuple2)# 튜플과 리스트는 합쳐지지 않는다.
 
-tuple3 = tuple*3  #문자열 처럼 *하면 여러개 나온다
+tuple0[2][1] = 0  #튜플은 불변하지만 튜플안에 가변객체가 있으면 객체안에 항목은 수정가능
+print(tuple0) 
+print(tuple0+ tuple1) #튜플끼리 합쳐지는 가능
+#print(tuple0+ tuple2)# 튜플과 리스트는 합쳐지지 않는다.
+
+tuple3 = tuple0*3  #문자열 처럼 *하면 여러개 나온다
 print(tuple3)
 
 del tuple3 #del은 튜플 삭제시키는것 리스트도 가능
 
-print(1 in tuple)  #맵버십으로 in 앞에 항목을 적고 예를 들어 1이 tuple이 있는가 확인하는것 있으면 true 없으면 false
-print(4 in tuple)  #//
-print(3 in tuple)
+print(1 in tuple0)  #맵버십으로 in 앞에 항목을 적고 예를 들어 1이 tuple이 있는가 확인하는것 있으면 true 없으면 false
+print(4 in tuple0)  #//
+print(3 in tuple0)
 
-print(tuple.count(1)) #1이라는 숫자가 몇개 있는지 갯수 세주기
-print(tuple.index(2)) #값 위치 찾기 근데 첫번째로 찾개되는 즉 항목중에 맨 앞에 있는 건만 확인함
+print(tuple0.count(1)) #1이라는 숫자가 몇개 있는지 갯수 세주기
+print(tuple0.index(2)) #값 위치 찾기 근데 첫번째로 찾개되는 즉 항목중에 맨 앞에 있는 건만 확인함
 
 tuple3=(1,2,3,4,5)
 print(len(tuple3)) #튜플 길이 
