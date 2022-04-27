@@ -1,0 +1,21 @@
+my_idol = {"name":" 쯔위","age":18,"job":"singer"}
+print(my_idol['name'])
+print(my_idol.get("name")) #키의 항목을 값을 출력
+print(my_idol.get("age"))
+print(my_idol.get("job"))
+print(my_idol.get("birth")) #키가 없을때 none으로 뜸
+
+my_idol["name"] = '수지' #항목 수정
+print(my_idol)
+
+my_idol['birth'] = '1994-10-10' #항목추가하기
+my_idol['manager'] = 'jyp'
+print(my_idol)
+print(my_idol.pop('birth')) #항목을 가져오면서 삭제
+
+del my_idol['age']
+print(my_idol)
+print(my_idol.popitem()) #아무값이나 가져오고 삭제
+
+my_idol.clear()
+print(my_idol)
