@@ -55,7 +55,14 @@ while True:
         if cnt == len(coin_key):
             coins[b] = c 
     elif a == 2:
-        print(coins)
+        print("현재 보유중인 가상화폐 내역입니다")
+        sum =0
+        for j in coins:
+            print(j,coins[j],"원,")
+            sum = sum +coins[j] 
+        print("총보유액은",sum,"원 입니다.")
     elif a == 3:
         print("프로그램을 종료합니다.")
         break
+    else:
+        print("잘못된 명령입니다")
