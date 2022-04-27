@@ -1,0 +1,13 @@
+sfloat = {1.0,3.0,2.0,10.0}
+print(sfloat,"\n")
+
+print(0.0 in sfloat) #들어가져있는지 참거짓구별
+print("a" not in sfloat,"\n")
+
+print(len(sfloat))
+print(max(sfloat))
+print(min(sfloat))
+print(sum(sfloat))
+print(sorted(sfloat))
+print(sfloat)
+print(set([1,2,3,3])) #리스트를 잡합화시킴
