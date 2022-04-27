@@ -1,0 +1,14 @@
+my_set = {1,2,3}
+print(my_set)
+print(type(my_set))
+my_set.add(7)  #add매서드는 항목을 추가할수있지만 한가지만 추가가능
+my_set.update('4')  #update매서드는 집합에 항목을 추가 할수있지만 int형이 안됨
+print(my_set)
+my_set.pop() #pop매서드는 항목을 추출하는 기능을 가진다. 하지만 정하놓지 않으면 아무 항목을 추출함
+print(my_set)
+my_set.discard(2) #discard매서드는 선택한 항목을 삭제하는기능 하지만 한가지만 삭제가능 
+print(my_set)
+my_set.remove(3) #remove는 한가지 항목을 삭제 가능
+print(my_set)
+my_set.clear() #집합을 비워버린다.
+print(my_set)
