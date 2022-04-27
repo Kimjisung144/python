@@ -1,0 +1,6 @@
+mydict = {1:"수소",2:"헬륨",2:"리튬",3:"리튬"} #사전에 키값이 중복이면 맨뒤에 있는 항목만 허용됨 나머지는 허용안됨
+print(mydict)
+print(type(mydict))
+
+mydict = dict([(1,'서울'),(2,"부산")]) #dict함수를 사용하여 리스트를 사전으로 만들기
+print(mydict)
