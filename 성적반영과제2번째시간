@@ -35,3 +35,34 @@ if 60 > sum(achie)/len(achie):
     print("불합격하셨습니다.")
 elif 60 < sum(achie)/len(achie):
     print("합격하셨습니다.")
+
+# (1) 가상화폐는 사전으로 다음과 같이 초기값이 이름과 보유금액의 쌍으로 저장됨. coins = [‘BTC’:50000, ‘XRP’:20000, ‘ADA’:30000]
+# (2) 코인 입력시 코인명과 금액을 입력하며, 기존에 있던 코인이 입력되면 저장된 금액에 입력
+# 된 금액이 더해짐.
+# (3) 새로운 코인 입력시 새로운 항목으로 추가함.
+# (4) 프로그램은 임의의 개수의 코인들이 저장되거나 입력되는 경우에 대해서 동작 가능하도록
+# 작성하여야 함. 출력예에 나온 특정 코인들의 경우에 국한하여 동작하는 프로그램으로 작성하
+# 면 안됨.
+coins = {'BTC':50000, 'XRP':20000, 'ADA':30000}
+cnt = 0
+while True:
+    a = int(input("명령을 입력하세요 (1=입력, 2=내역확인, 3=종료 "))
+    if(a == 1):
+        b,c = input("코인 정보를 입력하세요(입력종료는 마침표(‘.’)를 입력하세요)").split()
+        if('.' == c[-1]):
+            c = c[:-1]
+            c = int(c)
+        coin_key = coins.keys()
+        for i in coin_key:
+            if i == b:
+                coins[b] = coins[b] + c
+                break
+            elif i != c:    
+                cnt = cnt+1
+        if cnt == len(coin_key):
+            coins[b] = c 
+    elif a == 2:
+        print(coins)
+    elif a == 3:
+        print("프로그램을 종료합니다.")
+        break
