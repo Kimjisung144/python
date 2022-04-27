@@ -1,0 +1,27 @@
+a = {1,2,3,4,5,6}
+b = {1,2,3,7,8,9}
+
+#합집합
+print(a|b,'=> aUb') #a와 b의 합집합 이경우 연산자를 사용한것이다.
+print(a.union(b),"=>a.union(b)") #a와 b의 합집합 이경우 union이라는 매서드 사용한것이다.
+print(b.union(a),"=>b.union(a)")#a와 b의 합집합 이경우 union이라는 매서드 사용한것이다.
+print(a,"->a")
+
+#교집합
+print(a&b,"-> a&b") #a와 b의 교집합 이경우 연산자를 사용한것이다.
+print(a.intersection(b),"a.intersection(b)")#a와 b의 교집합 이경우 intersection이라는 매서드 사용한것이다.
+
+#차집합
+print(a-b,'->a-b') #a와 b의 차집합 이경우 연산자를 사용한것이다.
+print(a.difference(b),"a.difference(b)")#a와 b의 교집합 이경우 difference이라는 매서드 사용한것이다.
+
+#대청차집합은 aUb-a∩b 이다
+print(a^b,"->a^b") #a와 b의 대청차집합 이경우 연산자를 사용한것이다.
+print(a.symmetric_difference(b),"a.symmetric_difference(b)")#a와 b의 대청차집합 이경우 symmetric_difference이라는 매서드 사용한것이다.
+print()
+
+#부분집합
+print({4,5,6} <=a)
+print({4,5,6}.issuperset(a))
+print({1,2,3,4,5,6}>=a)
+print({1,2,3,4,5,6}.issuperset(a))
