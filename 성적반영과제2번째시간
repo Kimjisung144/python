@@ -18,3 +18,20 @@ print("3의배수",three_list)
 print("7의배수",seven_list)
 print("3과 7의공배수",min(rhd_list))
 
+# 2. 다음은 홍길동 수험생의 공인중개사 자격증 시험성적표이다. 아래 합격 기준에 만족하는지
+# 구하는 프로그램을 만드시오. (출력과 같이 나오도록 작성함) (40점)
+# (1) 매 과목 100점을 만점으로 하여 매 과목 40점 이상 득점
+# (2) 전 과목 평균 60점 이상 득점
+achie = [55,35,40,70,65,30]
+cnt =0
+for i in achie:
+    if(i<40):
+        cnt = cnt+1
+        
+print("40점 미만 과목수:",cnt)
+print("평균 점수:",sum(achie)/len(achie))
+
+if 60 > sum(achie)/len(achie):
+    print("불합격하셨습니다.")
+elif 60 < sum(achie)/len(achie):
+    print("합격하셨습니다.")
