@@ -1,0 +1,20 @@
+# 1. for 문을 이용해서 1 ~ 100까지 정수 중에서 3과 7의 공배수와 최소공배수를 아래와 같이
+# 출력하시오.
+three_list = []
+seven_list = []
+rhd_list = []
+
+for i in range(1,100,1):
+    if i % 3 ==0 or i % 7 == 0:
+        if i % 3 ==0:
+            three_list.append(i)
+        if i % 7 ==0:
+            seven_list.append(i)
+            
+    if i % 3 == 0 and i % 7 == 0:
+        rhd_list.append(i)
+        
+print("3의배수",three_list)
+print("7의배수",seven_list)
+print("3과 7의공배수",min(rhd_list))
+
