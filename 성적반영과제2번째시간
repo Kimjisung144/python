@@ -39,27 +39,27 @@ elif 60 < sum(achie)/len(achie):
 coins = {'BTC':50000, 'XRP':20000, 'ADA':30000}
 print("가상화폐 프로그램에 오신 것을 환영합니다")
 print("="*50)
-while True:
-    a = int(input("명령을 입력하세요 (1=입력, 2=내역확인, 3=종료)"))
-    if(a == 1):
-        while True:
-            b,c = input("코인 정보를 입력하세요(입력종료는 마침표(‘.’)를 입력하세요)").split()
-            cnt = 0
-            if('.' == c[-1]):
-                d = c[:-1]
+while True: #a가 3될때까지 무한루트
+    a = int(input("명령을 입력하세요 (1=입력, 2=내역확인, 3=종료)")) #무한루트를 a로 조작
+    if(a == 1): #입력일때
+        while True:# 계속 입력받기 위해 '.'문자 받으면 무한루트 break
+            b,c = input("코인 정보를 입력하세요(입력종료는 마침표(‘.’)를 입력하세요)").split() #b는 코인명,c는 가격입력받기위한 변수
+            cnt = 0 #coin_key와 길이 비교하기위한 변수,cnt카운트를 위한것
+            if('.' == c[-1]): #맨끝에 입력종료를 위한 마침표확인을 위한 if문
+                d = c[:-1] #만약 맨끝네 문자가 마침표라면 마침표 제외하고 문자열 d로 대입 d는 숫자로 int형으로 변환시키기고 가격 저장할 변수
             else:
-                d = c
-            d = int(d)
-            coin_key = coins.keys()
-            for i in coin_key:
-                if i == b:
-                    coins[b] = coins[b] + d
-                    break
-                elif i != d:    
-                    cnt = cnt+1
-            if cnt == len(coin_key):
-                coins[b] = d
-            if '.' == c[-1]:
+                d = c #만약 마침표가 없을시 그냥 d로 대입하기
+            d = int(d) #문자열인 d를 int형으로 변환
+            coin_key = coins.keys() #for문을 사용하기위해 사전 coins에 키들을 모아 리스트화시키기
+            for i in coin_key: #존재하는 키값비교를 위한 for문
+                if i == b: # 만약 coin_key[i]째가 입력한 코인명이 같다면
+                    coins[b] = coins[b] + d #만약 if문 참이면 coins사전에 키를 b로 해서 d를 키값을 누적계산하기
+                    break #for문 끝내기
+                elif i != b:  #i값하고 b값이 다를시
+                    cnt = cnt+1 #카운트1씩 하기
+            if cnt == len(coin_key): #coin_key길이와 카운트한 수 비교
+                coins[b] = d #맞으면 새로운 사전에 코인명과 가격추가
+            if '.' == c[-1]: #마지막으로 c값중에 .있으면 1번 입력끝내기
                 break
     elif a == 2:
         print("현재 보유중인 가상화폐 내역입니다")
