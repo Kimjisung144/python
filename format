@@ -1,0 +1,9 @@
+print('{0} {1}'.format('하나','둘')) #format형식
+print('칸이 비어도 가능 {} {} {}'.format(1,2,3)) #{}처럼 칸에 숫자가 비어도 가능
+
+print('체질량지수(bmi)를 계산해보아요')
+w = int(input('체중을 입력하세요:'))
+h = float(input("키를 입력하세요"))
+bmi = w / h * h
+com = 'bmi는 {0}/ {1}*{1} = {2:6.2f}' #2:6.2f는 뒤에 %6.2f처럼 적을수있다.
+print(com.format(w,h,bmi))  #0 = w, 1 = h, bmi=2 배열같은 느낌
