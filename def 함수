@@ -1,6 +1,18 @@
-def hap(a, b): #2개 변수 입력받음
+def hapap(c,d,e):
+    if e == "+":
+        hap(c,d)
+    elif e == "-":
+        bag(c,d)
+
+def hap(a, b):
     result = a+b
     print('두수의 합을  구해출혁해 주는 함수입니다.')
     print(f'{a} {b}의 합은 {result}입니다.')
-hap(10, 20) #입력하기
-hap(-87,172)
+
+def bag(a, b):
+    result = a-b
+    print('두수의 합을  구해출혁해 주는 함수입니다.')
+    print(f'{a} {b}의 합은 {result}입니다.')
+
+hapap(10, 20,"+")
+hapap(-87,172,"-")
