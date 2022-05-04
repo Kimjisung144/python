@@ -14,3 +14,10 @@ print('{food}의 기본재료는 {base}이고,핵심재료에 따라 이름이 �
 
 for core in coremat:
     print("{core}햄버거는 {core}가 들어간다.".format(core = core))
+    
+    #'f 스트리밍
+food ="햄버거"
+print(f'{food}의 기본재료는 {basemet}가 들어간다.')
+
+for core in coremat:
+    print(f'{core}햄버거는 {core}가 들어간다.')
