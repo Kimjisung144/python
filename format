@@ -11,3 +11,6 @@ print(com.format(w,h,bmi))  #0 = w, 1 = h, bmi=2 배열같은 느낌
 basemet = ('빵','토마토','야채','소스')
 coremat = ('새우','불고기','한우','치즈')
 print('{food}의 기본재료는 {base}이고,핵심재료에 따라 이름이 다라져.'.format(food="햄버거",base = basemet)) #format의 {숫자}가 아니여도 단어로도 정의할수있다. 다만 뒤에 설명하는게 귀찮 이런방법도 있다.
+
+for core in coremat:
+    print("{core}햄버거는 {core}가 들어간다.".format(core = core))
