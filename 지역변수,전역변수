@@ -19,3 +19,4 @@ print(global_var)
 ##print(local_var) #지역변수는 안됨
 print(var)##전역변수로 출력된다.
 print(f"함수 밖 var:{var}")
+##if문과 for문에서는 지역변수와 전역변수가 생성되지 않음
