@@ -1,0 +1,36 @@
+def cmd_input():
+    local_cmd = input("명령을 입력하세요(1=사용 2= 상태 3=종료")
+    return local_cmd
+
+def printer_use(name,num):
+    if name in printer_dict.keys():
+        printer = printer_dict[name]
+        printer[0] -=num
+        printer[1] -=num
+
+def printer_status():
+    for name in printer_dict.keys():
+        printer = printer_dict[name]
+        print(f"{name}종이{printer[0]}토너{printer[1]}",end='')
+
+print('프린터 관리자 입니다.')
+cash = 20000  # 잔액 2만원
+printer_dict = {'잉크젯':[200,100],'레이저젯':[200,100],'epson':[200,100]}
+z = 1  # 무한루트
+c =0
+
+while z:
+    c = cmd_input()
+    if c == '1':  # 사용할떄
+        cmd_list = input("프린터명과 사용할 장수를 입력하세요").split()  # a는 프린터명 b는 종이장수
+        printer_use(cmd_list[0],int(cmd_list[1]))
+    elif c == '2':  # 상태확인
+        printer_status()
+
+    elif c == '3':  # 종료할떄
+        print("프로그램을 종료합니다")
+        z = 0  # 무한루프 끝내기
+        break  # 무한루프 끝내기
+
+    else:  # 1,2,3,4외에 입력했을떄
+        print("잘못입력하셨습니다.")
