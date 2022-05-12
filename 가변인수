@@ -6,9 +6,17 @@ def even(*arg): #가변인수는 맨 뒤에 적어야한다. 가변인수는 튜
         result.append(num) ##짝수 넣기
     return result
 
+def even1(message,*arg): #가변인수는 맨 뒤에 적어야한다. 가변인수는 튜플로 적용된다.
+    result = [message]
+    for num in arg:
+        if num %2 == 0:
+            continue #홀수일경우 다시 반복문으로 돌아가기
+        result.append(num) ##짝수 넣기
+    return result
 def infor(*info):
     print(f"{info[0]}이고요 {info[1]}이 제 학번입니다. 그리고{info[2]}는 나이입니다.")
 
 print(even(1,2,3,4,5,6,7,8,9,10))
 infor('홀길동',1121212,25)
 infor(*list_s) #리스트는 *붙여준다. 가변인수이기때문에
+print(even1('홀수',1,2,3,4,5,6,7,8,9,10))
