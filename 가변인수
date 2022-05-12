@@ -1,0 +1,9 @@
+def even(*arg): #가변인수는 맨 뒤에 적어야한다. 가변인수는 튜플로 적용된다.
+    result = []
+    for num in arg:
+        if num %2 ==1:
+            continue #홀수일경우 다시 반복문으로 돌아가기
+        result.append(num) ##짝수 넣기
+    return result
+
+print(even(1,2,3,4,5,6,7,8,9,10))
