@@ -1,0 +1,6 @@
+lambda x,y: x*y ##람다 함수는 간단한 함수를 적는것 밑에 함수랑 같은 의미 :뒤에 return 값 적기
+def c(x,y):
+    return x*y
+c(1,2)
+
+print((lambda x,y:x*y)(10,2))
