@@ -1,0 +1,16 @@
+print_s =1
+help(print_s) #함수에댛나 정보를 얻고 싶을때 대화형 도움말 시스템 호출
+
+global_var = '전역변수' #전역변수는 모든공간에서 사용가능
+
+def scope():
+     local_var = '지역변수' #지역변수는 그안에서만 사용가능
+     print(local_var)
+     print(global_var)
+     var = "지역변수"
+     print(var) ##변수명이 같을경우 지역변수로 출력된다.
+scope()
+
+print(global_var)
+##print(local_var) #지역변수는 안됨
+print(var)##전역변수로 출력된다.
