@@ -1,0 +1,34 @@
+def nove0(value): ##return 값이 없으면 none값을 갖는다.
+    x = value
+
+def nove(value): ##return 값은 하나의 객체만 돌려줄수있다.
+    x = value
+    return x
+
+def nove1(value):
+    x = [value,value+1,value+2] ##리스트,튜플,사전,등 자료형을 사용하면 한번에 여러개의 값을 돌려줄수있다.
+    return x
+
+def nove2(value):
+    x = (value,value+1,value+2)
+    return x
+
+def nove3(value):
+    x = {value,value+1,value+2}
+    return x
+
+def nove4(value):
+    x = {1:value,2:value+1,3:value+2}
+    return x
+
+def nove5(value):
+    return value,value-1,value-2
+
+a =20
+print(nove0(a))
+print(nove(a))
+print(nove1(a))
+print(nove2(a))
+print(nove3(a))
+print(nove4(a))
+print(nove5(a))
