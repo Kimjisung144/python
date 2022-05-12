@@ -23,8 +23,18 @@ def nove4(value):
 
 def nove5(value):
     return value,value-1,value-2
+def report(message,who="everyone"): #who값에 정해지지 않으면 everyone이라고 정해진다. 뒤에만 매개변수의 기본값을 설정 할수있다.
+    print(message,who)
 
-a =20
+def my_info(name,sid=122121,age=24):
+    print(f"이름은 {name}이고 학번은 {sid}, 그리고 나이는 {age}입니다.")
+    
+a =20 
+report("good morning") ##message,값에 good morning들어감
+report("good morning","mr.park") ##who값에 mr.park값이 들어감
+my_info("홍길동",11111,26)
+my_info("홍길동",11111)
+my_info("홍길동")
 print(nove0(a))
 print(nove(a))
 print(nove1(a))
