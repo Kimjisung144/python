@@ -10,7 +10,12 @@ def scope():
      var = "지역변수"
      print(var) ##변수명이 같을경우 지역변수로 출력된다.
 scope()
-
+def scope1():
+  global var #전역변수 쓰고 싶을떄 global명령어를 적는다.
+  var = 'global 명령어의 역활'
+  print(f"함수 안 var:{var}")
+scope1()
 print(global_var)
 ##print(local_var) #지역변수는 안됨
 print(var)##전역변수로 출력된다.
+print(f"함수 밖 var:{var}")
