@@ -1,0 +1,34 @@
+list_a = []
+i = 0
+a = int(input())
+if a < 10:
+    a = a * 10 #10미만일시 뒤에 0붙이기
+b = str(a)
+for j in range(2):
+    list_a.append(b[j])  ##분리시키고 리스트에 넣기
+list_a = [int(i) for i in list_a]  # 리스트 int로 변환
+z = list_a[0] + list_a[1]  # 다음 값 생성
+s = str(z)
+for j in range(len(s)):
+    list_a.append(s[j])
+list_a = [int(i) for i in list_a]  # 리스트 int로 변환//
+g=1
+while True:
+    g = g+1
+    cnt=0
+    j=0
+    for u in range(len(s)): #글자갯수 카운드
+        cnt = cnt + 1
+    if cnt == 2:
+        z = list_a[-3] + list_a[-1]  # 다음 값 생성
+        s = str(z)
+    elif cnt == 1:
+        z = list_a[-2] + list_a[-1]  # 다음 값 생성
+        s = str(z)
+    for j in range(len(s)):
+        list_a.append(s[j])##분리시키고 리스트에 넣기
+        i=0
+    if(b[0] == str(list_a[-2]) and b[1] == str(list_a[-1])):
+        break
+    list_a = [int(i) for i in list_a]  # 리스트 int로 변환
+print(g)
