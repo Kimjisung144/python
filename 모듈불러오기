@@ -2,3 +2,4 @@ import mymath ##이모듈가져오는 형식은 모든것을 다가져오는데 
 from mymath import pi,onehapn ## 이거는 지정된변수또는 함수만 가져온다.
 from mymath import* ## 이렇게 모듈가져오면 표식안하고 모듈에 있는 모든것을 사용가능
 import mymath as mym
+__name__##모듈에 적고 실해오디면__name__은 다 실행함
