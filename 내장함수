@@ -1,0 +1,6 @@
+a = 10
+b= -10
+print(abs(a))
+print(abs(b)) ##abs함수는 절대값을 구하는것이다.
+print(bool(a))##bool함수는 참거짓 구별함수이다.
+print(eval("100*2"))##eval함수는 문자를 숫자로 인식해서 계산이 가능하다.
