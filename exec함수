@@ -1,0 +1,2 @@
+state2 = "print('i love you ')"
+exec(state2) ##exec함수는 문자열의 코드를 해석하여 실행함
