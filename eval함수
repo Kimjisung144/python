@@ -1,0 +1,6 @@
+while True:
+    a = input("계산할 식을 적어주세여")
+    if a != 'q':
+        print(f"{a}식의 답은 {eval(a)}")
+    else:
+        break
