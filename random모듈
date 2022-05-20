@@ -1,0 +1,9 @@
+import random
+
+for i in range(5):
+    print(random.randint(1,45))##랜덤으로 출력
+card = ['a','b','c','d','e','f','g']
+print(card)
+random.shuffle(card) ##순서 섞기
+print(card)
+print(random.choice(card)) #아무거나 선택
