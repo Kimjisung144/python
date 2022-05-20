@@ -4,3 +4,4 @@ print(abs(a))
 print(abs(b)) ##abs함수는 절대값을 구하는것이다.
 print(bool(a))##bool함수는 참거짓 구별함수이다.
 print(eval("100*2"))##eval함수는 문자를 숫자로 인식해서 계산이 가능하다.
+print(pow(2,3),round(2.6)) ##pow는 지수를 말하는것 round는 반올림 만약 .5라면 잎질;기 짝수일경우버리고 홀수일경우 올린다. 
