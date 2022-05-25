@@ -1,0 +1,6 @@
+#1
+a = int(input("길이(mm)를 입력하세요:"))
+print(f"{a}mm --> {a*0.1}cm")
+print(f"{a}mm --> {a*0.001}m")
+print(f"{a}mm --> {a*0.03937}inch")
+print(f"{a}mm --> {a*0.003281}ft")
