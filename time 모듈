@@ -1,0 +1,9 @@
+import time
+
+a = time.time() #1970년 이후 초를 표시
+print(a/(60*60*24*365))
+print(time.ctime()) #ctime은 문자열로 시간을 알려준다.
+
+for i in range(10):
+  print(time.ctime())
+  time.sleep(1) ##sleep함수는 몇초 기다린다.
