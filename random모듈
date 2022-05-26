@@ -7,3 +7,7 @@ print(card)
 random.shuffle(card) ##순서 섞기
 print(card)
 print(random.choice(card)) #아무거나 선택
+mystr = "최고의 영화-죽은 시인의 사회"
+print(random.sample(mystr,3)) ##중복되지 않게 추출해준다.
+print(random.sample(range(1,46),3)) #range함수 사용해서 사용가능
+print(random.uniform(0,10)) ##실수상태에 소수점 까지 랜덤가능
