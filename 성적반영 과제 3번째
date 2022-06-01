@@ -1,0 +1,72 @@
+3번
+##모듈 파일
+def mycafe():
+    f = open('myMenu.txt','w')
+    memo = ('''
+    아메리카노': ('커피', 2000)
+    '카페라떼': ('커피', 3000)
+    '마끼아또': ('커피', 4000)
+    '피칸파이': ('쿠키', 3000)
+    '당근케익': ('쿠키', 2000)
+    '에그타르트': ('쿠키', 4000)
+    ''')
+    f.write(memo)
+    f.close()
+import myCircle
+mydict = {}
+
+def ams(i):
+    if i == "아메리카노":
+        return 2000
+    elif i == "카페라떼":
+        return 3000
+    elif i  == "마끼아또":
+        return 4000
+    elif i == "피칸파이":
+        return 3000
+    elif i == "당근케익":
+        return 2000
+    elif i == "에그타르트":
+        return 4000
+
+def prc():
+    print("전체 주문 내역입니다")
+    sums =0
+    for i in mydict.keys():
+        print(f"{i} {mydict[i]}잔 /개 가격 {ams(i) * mydict[i]}")
+        sums = sums + ams(i) * mydict[i]
+    print(f"주문 총액은 {sums}원 입니다.")
+
+
+while True:
+   a =  input("메뉴를 선택하세요: 1=커피 2=쿠키 3=주문끝 q=종료 >>")
+   if a == "1":
+       cafe_name,cout = input("커피 이름과 잔수를 선택하세요 (예: 아메리카노 2): 아메리카노=2000원 카페라떼=3000원 마끼아또=4000원 >>").split()
+       mydict[cafe_name] = int(cout)
+       print(f"{cafe_name} {cout}잔 가격{ams(cafe_name) * mydict[cafe_name]}원")
+   elif a == '2':
+       cafe_name, cout = input("쿠키 이름과 갯수를 선택하세요 (예: 당근케익 2) :피칸파이=3000원 당근케익=2000원 에그타르트=4000원 >>").split()
+       mydict[cafe_name] = int(cout)
+       print(f"{cafe_name} {cout}개 가격{ams(cafe_name) * mydict[cafe_name]}원")
+   elif a == "3":
+       prc()
+   elif  a == "q":
+       break
+##2번쨰
+##메인
+import myCircle
+
+print(f"원 둘례:{myCircle.circumference()}")
+print(f"원 넓이:{myCircle.area()}")
+
+## myCircle.py
+import math
+##모듈
+
+def circumference():
+    a = 2*6*math.pi
+    return a
+
+def area():
+    b = math.pi*6**2
+    return b
